@@ -6,8 +6,7 @@ interface CustomImageProps extends Omit<NextImageProps, 'src' | 'alt'> {
   alt: string
   className?: string
 }
-
-export const Image: React.FC<CustomImageProps> = ({
+export const Image: React.FC<ImageProps> = ({
   src,
   alt,
   width,
@@ -27,8 +26,6 @@ export const Image: React.FC<CustomImageProps> = ({
         sizes={sizes}
         className={className}
         priority={priority}
-        unoptimized
-        {...rest}
       />
     )
   }
@@ -42,8 +39,6 @@ export const Image: React.FC<CustomImageProps> = ({
       className={className}
       priority={priority}
       sizes={sizes}
-      unoptimized
-      {...rest}
     />
   )
 }
