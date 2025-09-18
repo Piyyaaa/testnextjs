@@ -1,4 +1,6 @@
-First, run the development server:
+First, run the root project
+
+Second, run the development server:
 
 ```bash
 npm run dev
