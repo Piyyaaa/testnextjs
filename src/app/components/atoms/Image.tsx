@@ -1,18 +1,13 @@
 import React from 'react'
-import NextImage from 'next/image'
+import NextImage, { ImageProps as NextImageProps } from 'next/image'
 
-interface ImageProps {
+interface CustomImageProps extends Omit<NextImageProps, 'src' | 'alt'> {
   src: string
   alt: string
-  width?: number
-  height?: number
   className?: string
-  priority?: boolean
-  fill?: boolean
-  sizes?: string
 }
 
-export const Image: React.FC<ImageProps> = ({
+export const Image: React.FC<CustomImageProps> = ({
   src,
   alt,
   width,
@@ -21,6 +16,7 @@ export const Image: React.FC<ImageProps> = ({
   priority = false,
   fill = false,
   sizes = '(min-width: 1024px) 600px, 100vw',
+  ...rest
 }) => {
   if (fill) {
     return (
@@ -32,6 +28,7 @@ export const Image: React.FC<ImageProps> = ({
         className={className}
         priority={priority}
         unoptimized
+        {...rest}
       />
     )
   }
@@ -46,6 +43,7 @@ export const Image: React.FC<ImageProps> = ({
       priority={priority}
       sizes={sizes}
       unoptimized
+      {...rest}
     />
   )
 }
