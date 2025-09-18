@@ -6,7 +6,7 @@ interface CustomImageProps extends Omit<NextImageProps, 'src' | 'alt'> {
   alt: string
   className?: string
 }
-export const Image: React.FC<ImageProps> = ({
+export const Image: React.FC<CustomImageProps> = ({
   src,
   alt,
   width,
