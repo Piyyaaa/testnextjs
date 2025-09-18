@@ -1,59 +1,13 @@
 .heading {
   margin: 0;
+  color: var(--color-text);
+  font-weight: 700;
   line-height: 1.2;
 }
 
-/* Sizes */
-.sm {
-  font-size: var(--font-size-sm);
-}
+.xl { font-size: var(--font-size-3xl); }
+.lg { font-size: var(--font-size-2xl); }
+.md { font-size: var(--font-size-xl); }
 
-.md {
-  font-size: var(--font-size-base);
-}
-
-.lg {
-  font-size: var(--font-size-lg);
-}
-
-.xl {
-  font-size: var(--font-size-xl);
-}
-
-.2xl {
-  font-size: var(--font-size-2xl);
-}
-
-.3xl {
-  font-size: var(--font-size-3xl);
-}
-
-.4xl {
-  font-size: var(--font-size-4xl);
-}
-
-/* Weights */
-.normal {
-  font-weight: 400;
-}
-
-.medium {
-  font-weight: 500;
-}
-
-.semibold {
-  font-weight: 600;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-/* Colors */
-.default {
-  color: var(--color-text);
-}
-
-.primary {
-  color: var(--color-primary);
-}
+.center { text-align: center; }
+.muted { color: var(--color-text-light); font-weight: 600; }

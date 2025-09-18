@@ -54,7 +54,6 @@ export default function AMPPage() {
           `}</style>
         </noscript>
         
-        {/* Custom AMP CSS */}
         <style amp-custom="">{`
           /* AMP CSS Reset & Global Styles */
           * {
@@ -259,7 +258,6 @@ export default function AMPPage() {
           Skip to main content
         </a>
         
-        {/* Hero Section */}
         <header className="hero">
           <div className="container">
             <h1>{home.headline}</h1>
@@ -273,7 +271,6 @@ export default function AMPPage() {
           </div>
         </header>
         
-        {/* Features Section */}
         <main id="main">
           <section id="features" className="features">
             <div className="container">
@@ -289,7 +286,6 @@ export default function AMPPage() {
           </section>
         </main>
         
-        {/* Footer */}
         <footer className="footer">
           <div className="container">
             <nav className="footer-nav">
