@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://piyyaaa.github.io/testnextjs
+Sitemap: https://piyyaaa.github.io/testnextjs/sitemap.xml
