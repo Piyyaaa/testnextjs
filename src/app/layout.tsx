@@ -4,17 +4,10 @@ import './globals.css'
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
+  viewport: { width: 'device-width', initialScale: 1 },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
       <head>
