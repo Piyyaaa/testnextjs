@@ -1,13 +1,13 @@
-import { MetadataRoute } from 'next'
-import { siteContent } from '../app/lib/Content'
+export const dynamic = 'force-static'
 
-export default function robots(): MetadataRoute.Robots {
+export default function robots() {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: '/private/',
-    },
-    sitemap: `${siteContent.site.baseUrl}/sitemap.xml`,
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+    ],
+    sitemap: 'https://piyyaaa.github.io/testnextjs/sitemap.xml',
   }
 }
