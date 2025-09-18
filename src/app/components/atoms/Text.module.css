@@ -1,0 +1,47 @@
+.text {
+  margin: 0;
+}
+
+.sm {
+  font-size: var(--font-size-sm);
+}
+
+.base {
+  font-size: var(--font-size-base);
+}
+
+.lg {
+  font-size: var(--font-size-lg);
+}
+
+.xl {
+  font-size: var(--font-size-xl);
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.default {
+  color: var(--color-text);
+}
+
+.light {
+  color: var(--color-text-light);
+}
+
+.primary {
+  color: var(--color-primary);
+}
