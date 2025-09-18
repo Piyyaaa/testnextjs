@@ -9,7 +9,7 @@ export const siteContent = {
     subheadline: 'Solusi terbaik untuk kebutuhan digital Anda dengan teknologi modern dan inovatif',
     ctaLabel: 'Mulai Sekarang',
     heroAlt: 'Hero illustration showing modern web development',
-    heroImage: '/images/hero.jpg',
+    heroImage: 'images/hero.jpg?v=2',
     features: [
       {
         title: 'Performa Tinggi',
