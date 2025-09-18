@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "npm run build && npm run export && move out docs"
+    "deploy": "npm run build && if (Test-Path docs) { Remove-Item -Recurse -Force docs } ; Rename-Item out docs"
   },
   "dependencies": {
     "next": "15.0.0",
