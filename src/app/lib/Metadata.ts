@@ -25,7 +25,3 @@ export const defaultMetadata: Metadata = {
     images: [`${siteContent.site.baseUrl}/images/og-home.svg`],
   },
 };
-
-export function buildMetadata(overrides?: Partial<Metadata>): Metadata {
-  return { ...defaultMetadata, ...(overrides ?? {}) };
-}
