@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import NextImage from 'next/image'
 
 interface ImageProps {
   src: string
@@ -11,6 +11,7 @@ interface ImageProps {
   fill?: boolean
   sizes?: string
 }
+
 export const Image: React.FC<ImageProps> = ({
   src,
   alt,
@@ -24,23 +25,26 @@ export const Image: React.FC<ImageProps> = ({
   if (fill) {
     return (
       <NextImage
-        src={imagesrc}
-        alt={imagealt}
+        src={src}
+        alt={alt}
         fill
         sizes={sizes}
         className={className}
         priority={priority}
+        unoptimized
       />
     )
   }
 
   return (
     <NextImage
-      src={imagessrc}
-      alt={imagesalt}
-      width={600}
-      height={400}
-      priority
+      src={src}
+      alt={alt}
+      width={width || 800}
+      height={height || 600}
+      className={className}
+      priority={priority}
+      sizes={sizes}
       unoptimized
     />
   )
