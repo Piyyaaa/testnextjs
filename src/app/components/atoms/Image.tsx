@@ -34,7 +34,7 @@ export const Image: React.FC<CustomImageProps> = ({
     const containerStyle: React.CSSProperties = {
       position: 'relative',
       width: '100%',
-      ...(aspectRatio ? { aspectRatio: String(aspectRatio) } : { minHeight: 1, height: 'auto' }),
+      ...(aspectRatio ? { aspectRatio: String(aspectRatio) } : { minHeight: 1 }),
     };
 
     return (
