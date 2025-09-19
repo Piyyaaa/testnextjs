@@ -97,3 +97,14 @@ p {
 .skip-to-content:focus {
   top: 6px;
 }
+
+img, picture, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 72rem;
+}
